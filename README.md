@@ -34,7 +34,6 @@ memory_verification/
 └── tb_top.sv
 ```
 
-* `eda_playground_single_file.sv` is the all-in-one version for quick run and demo.
 * The separate files are kept for cleaner project structure and readability.
 
 ## Result
