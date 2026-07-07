@@ -1,8 +1,8 @@
 # Memory Verification
 
-This is a small SystemVerilog memory verification project.
+This is a small SystemVerilog memory verification project for a synchronous memory.
 
-It uses a class-based testbench with:
+It uses a simple class-based testbench with:
 
 * generator
 * driver / BFM
@@ -11,7 +11,31 @@ It uses a class-based testbench with:
 * coverage
 * environment
 
-The testbench verifies write and read operations, including corner cases and random cases.
+The testbench checks write and read operations using directed corner cases and random tests.
+
+## Project Files
+
+```text
+memory_verification/
+├── README.md
+├── eda_playground_single_file.sv
+├── mem_defs.svh
+├── mem_intf.sv
+├── memory.sv
+├── mem_tx.sv
+├── mem_common.sv
+├── mem_gen.sv
+├── mem_bfm.sv
+├── mem_mon.sv
+├── mem_cov.sv
+├── mem_sbd.sv
+├── mem_agent.sv
+├── mem_env.sv
+└── tb_top.sv
+```
+
+* `eda_playground_single_file.sv` is the all-in-one version for quick run and demo.
+* The separate files are kept for cleaner project structure and readability.
 
 ## Result
 
@@ -22,6 +46,6 @@ The testbench verifies write and read operations, including corner cases and ran
 
 ## EDA Playground
 
-https://www.edaplayground.com/x/vkT3
+[Run on EDA Playground](https://www.edaplayground.com/x/vkT3)
 
 Tested on EDA Playground using Questa/ModelSim.
